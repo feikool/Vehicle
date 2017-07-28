@@ -1,0 +1,249 @@
+@import url('base.css');
+
+/* 头部导航 */
+
+.header-wrap header{
+    width: 100%;
+    height: .88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eb2727;
+}
+
+.header-wrap header i {
+    border-radius:50%;
+    width: .5rem;
+    height: .5rem;
+    line-height:.5rem;
+    text-align: center;
+    margin: 0 .2rem;
+    box-sizing: border-box;
+    font-size: .4rem;
+    color: #fff;
+}
+
+.header-title h2{
+    margin-bottom: .1rem;
+    font-size: .3rem;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;    
+}
+/* 直播Tab栏 */
+
+
+.direct{
+    width: 100%;
+}
+.direct-tab-wrap{
+    width: 82%;
+    background: #3d3e47;
+    margin: 0 auto;
+    height: .7rem;
+    position: relative;
+    margin-top: 2%;
+}
+.direct-tab-wrap::after,.direct-tab-wrap::before{
+    position: absolute;
+    right: -.35rem;
+    bottom: 0;
+    border-radius: 50%;
+    height: .7rem;
+    content: '';
+    width: .7rem;
+    background:#3d3e47;
+}
+.direct-tab-wrap::before{
+    right: auto;
+    left:-.35rem;
+}
+.direct-tab-main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .26rem;
+    color:#fff;
+}
+.direct-tab-main .current{
+    background: #fed33d;
+    height: .5rem;
+    width: .6rem;
+    text-align: center;
+    line-height: .5rem;
+    position: relative;
+}
+.direct-tab-main .current::after,.direct-tab-main .current::before{
+    background:#fed33d;
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 0;
+    left: -0.25rem;
+    border-radius: 50%;
+}
+.direct-tab-main .current::before{
+    left:auto;
+    right: -.25rem;
+}
+.direct-tab-main .current i{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* 赛事直播Tab */
+.direct-main{
+    width: 90%;
+    margin:.2rem auto;
+}
+.direct-title{
+    width: 100%;
+}
+.direct-title p,.direct-title p i{
+    color: #73757b;
+    font-weight: bold;
+    font-size: .24rem;
+}
+.direct-title p i{
+    color: #fead1f;
+}
+.direct-title p:nth-child(2){
+    color: #f72348;
+    font-size: .24rem;
+    line-height: .4rem;
+}
+
+.direct-body{
+    width: 100%;
+    margin-top: .2rem;
+}
+.direct-body ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.direct-body ul li{
+    width: 31%;
+    height: 3.3rem;
+    margin-bottom: .2rem;
+    background: #fff;
+    margin-right: .2rem;   
+    border-radius: 2%; 
+}
+.direct-body ul li:nth-child(3),.direct-body ul li:nth-child(6),
+.direct-body ul li:nth-child(9),.direct-body ul li:nth-child(12){
+    margin-right: 0;
+}
+.direct-item h5{
+    margin-top: .3rem;
+    margin-bottom: .05rem;
+    text-align: center;
+    font-size: .26rem;
+    font-weight: 600;
+}
+.direct-item p{
+    display: flex;
+    justify-content: center;
+}
+.direct-item p .star{
+    display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    background: url('../images/star.png')no-repeat center;
+    background-size: cover;
+    margin: 2px;
+}
+.car-pic{
+    width: 100%;
+    height: 1.5rem;
+    position: relative;
+}
+.car-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.car-pic .control{
+    position: absolute;
+    height: .6rem;
+    width: .6rem;
+    background: url('../images/control.png')no-repeat center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    margin-left: -.3rem;
+    margin-top: -.3rem;
+}
+
+
+/* 用户 评论 信息 */
+.use{
+    width: 100%;
+}
+
+.use-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person-pic{
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 .1rem 0 3px;
+}
+.person-pic img{
+    width: 100%;
+}
+
+.person-text{
+    font-size: .16rem;
+    flex:1;
+    font-weight: 600;
+    position: relative;
+    color:#3b4550;
+}
+.person-text::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: .3rem;
+    background: #ff1e00;
+    left: 0;
+    bottom: -5px;
+
+}
+.use-discuss{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.use-discuss>div{
+    width: 50%;
+}
+.use-discuss>div:nth-child(1){
+    padding-left: .1rem;
+}
+.use-discuss>div>i{
+    color:#f82424;
+    font-size: .15rem;
+}
+.use-discuss>div>span{
+    color:#dadada;
+    font-size: .15rem;
+}

@@ -110,6 +110,11 @@
 
 .direct{
     width: 100%;
+    background: url('../images/back.png') no-repeat center bottom;
+    background-size: contain;
+    height: 9.7rem;
+    margin-bottom: .3rem;
+    position: relative;
 }
 .direct-tab-wrap{
     width: 82%;
@@ -176,7 +181,15 @@
     left: 0;
     z-index: 100;
 }
-
+.more{
+    background: url('../images/more.png') no-repeat center;
+    background-size: cover;
+    width: 1rem;
+    height: .3rem;
+    position: absolute;
+    bottom: .1rem;
+    right: .16rem;
+}
 /* 赛事直播Tab */
 .direct-main{
     width: 90%;
@@ -346,6 +359,7 @@
 .recommend .recommend-title p:nth-child(2){
     color: #f72348;
     line-height: .4rem;
+    margin-bottom: .1rem;
 }
 
 .recommend-wrap{
