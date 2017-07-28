@@ -1,0 +1,475 @@
+@import url('base.css');
+.header-wrap{
+    width: 100%;
+    height: 5.5rem;
+    background: #eb2727;
+    color: #fff;
+}
+
+/* 头部导航 */
+
+.header-wrap header{
+    width: 100%;
+    height: .88rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrap header i {
+    background: rgba(255,255,255,.3);
+    border-radius:50%;
+    width: .5rem;
+    height: .5rem;
+    line-height:.5rem;
+    text-align: center;
+    margin: 0 .2rem;
+    box-sizing: border-box;
+    font-size: .26rem;
+    border:1.5px solid #fff;
+}
+
+.header-title{
+    text-align: center;
+}
+.header-title h2{
+    margin-bottom: .1rem;
+}
+
+.header-title h2{
+    font-size: .3rem;
+}
+.title-pic{
+    background: url('../images/titlePic.png')no-repeat;
+    background-size: cover;
+    width: 1.64rem;
+    height: 0.14rem;
+
+}
+
+
+/*搜索框  */
+
+.search-wrap{
+    width: 100%;
+    height: .88rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search-wrap .search-main{
+    width: 84%;
+    height: .64rem;
+    background: rgba(0,0,0,.6);
+    border-radius: .1rem;
+    display: flex;
+    align-items: center;
+}
+.search-wrap .search-main i{
+    font-size: .3rem;
+    margin: 0 .1rem;
+}
+.search-wrap .search-main input{
+    flex:1;
+    height: 100%;
+    background: transparent;
+    padding-left: .1rem;
+}
+.banner-wrap{
+    width: 100%;
+}
+.banner-body{
+    background: url('../images/car.png')no-repeat center;
+    background-size: 90% auto;    
+    height: 3rem;
+}
+.banner-btn{
+    width: 1.2rem;
+    height: .6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-btn i {
+    width: .14rem;
+    height: .14rem;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+}
+.banner-btn .current{
+    width: .26rem;
+    border-radius: 35%;    
+}
+
+
+
+/* 直播Tab栏 */
+
+
+.direct{
+    width: 100%;
+}
+.direct-tab-wrap{
+    width: 82%;
+    background: #3d3e47;
+    margin: 0 auto;
+    height: .7rem;
+    position: relative;
+    margin-top: 2%;
+}
+.direct-tab-wrap::after,.direct-tab-wrap::before{
+    position: absolute;
+    right: -.35rem;
+    bottom: 0;
+    border-radius: 50%;
+    height: .7rem;
+    content: '';
+    width: .7rem;
+    background:#3d3e47;
+}
+.direct-tab-wrap::before{
+    right: auto;
+    left:-.35rem;
+}
+.direct-tab-main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .26rem;
+    color:#fff;
+}
+.direct-tab-main .current{
+    background: #fed33d;
+    height: .5rem;
+    width: .6rem;
+    text-align: center;
+    line-height: .5rem;
+    position: relative;
+}
+.direct-tab-main .current::after,.direct-tab-main .current::before{
+    background:#fed33d;
+    content: '';
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    top: 0;
+    left: -0.25rem;
+    border-radius: 50%;
+}
+.direct-tab-main .current::before{
+    left:auto;
+    right: -.25rem;
+}
+.direct-tab-main .current i{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* 赛事直播Tab */
+.direct-main{
+    width: 90%;
+    margin:.2rem auto;
+}
+.direct-title{
+    width: 100%;
+}
+.direct-title p,.direct-title p i{
+    color: #73757b;
+    font-weight: bold;
+    font-size: .24rem;
+}
+.direct-title p i{
+    color: #fead1f;
+}
+.direct-title p:nth-child(2){
+    color: #f72348;
+    font-size: .24rem;
+    line-height: .4rem;
+}
+
+.direct-body{
+    width: 100%;
+    margin-top: .2rem;
+}
+.direct-body ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.direct-body ul li{
+    width: 31%;
+    height: 3.3rem;
+    margin-bottom: .2rem;
+    background: #fff;
+    margin-right: .2rem;   
+    border-radius: 2%; 
+}
+.direct-body ul li:nth-child(3),.direct-body ul li:nth-child(6){
+    margin-right: 0;
+}
+.direct-item h5{
+    margin-top: .3rem;
+    margin-bottom: .05rem;
+    text-align: center;
+    font-size: .26rem;
+    font-weight: 600;
+}
+.direct-item p{
+    display: flex;
+    justify-content: center;
+}
+.direct-item p .star{
+    display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    background: url('../images/star.png')no-repeat center;
+    background-size: cover;
+    margin: 2px;
+}
+.car-pic{
+    width: 100%;
+    height: 1.5rem;
+    position: relative;
+}
+.car-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.car-pic .control{
+    position: absolute;
+    height: .6rem;
+    width: .6rem;
+    background: url('../images/control.png')no-repeat center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    margin-left: -.3rem;
+    margin-top: -.3rem;
+}
+
+
+/* 用户 评论 信息 */
+.use{
+    width: 100%;
+}
+
+.use-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person-pic{
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 .1rem 0 3px;
+}
+.person-pic img{
+    width: 100%;
+}
+
+.person-text{
+    font-size: .16rem;
+    flex:1;
+    font-weight: 600;
+    position: relative;
+    color:#3b4550;
+}
+.person-text::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: .3rem;
+    background: #ff1e00;
+    left: 0;
+    bottom: -5px;
+
+}
+.use-discuss{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.use-discuss>div{
+    width: 50%;
+}
+.use-discuss>div:nth-child(1){
+    padding-left: .1rem;
+}
+.use-discuss>div>i{
+    color:#f82424;
+    font-size: .15rem;
+}
+.use-discuss>div>span{
+    color:#dadada;
+    font-size: .15rem;
+}
+
+
+/* 推荐直播 */
+
+.recommend{
+    margin-bottom: .88rem;
+    width: 100%;
+}
+.recommend .recommend-title{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.recommend .recommend-title p{
+    color:#707278;
+    font-weight: bold;
+    font-size: .24rem;
+}
+.recommend .recommend-title p i{
+    color:#fead1f;
+    font-weight: bold;
+}
+.recommend .recommend-title p:nth-child(2){
+    color: #f72348;
+    line-height: .4rem;
+}
+
+.recommend-wrap{
+    width: 100%;
+    height: 4.2rem;
+     overflow-x: scroll; 
+}
+.recommend-wrap ul{
+    display: flex;
+    width: 13.2rem;
+}
+.recommend-item{
+    width: 4.1rem;
+    height: 4.1rem;
+    border-radius: 5%;
+    border:1px solid red;
+    overflow: hidden;
+    background: #fff;
+    margin: 0 .2rem;
+}
+.recommend-pic{
+    position: relative;
+}
+.recommend-pic img{
+    width: 100%;
+}
+.recommend-pic i{
+    position: absolute;
+    bottom:-.25rem;
+    right:.3rem;
+    background: url('../images/control.png') no-repeat center;
+    background-size: cover;
+    width: .5rem;
+    height: .5rem;
+}
+
+.recommend-info{
+    width: 100%;
+    padding-left: .1rem;
+}
+.rec-title{
+    color: #292f33;
+    font-weight: bold;
+    font-size: .28rem;
+    padding-top: .1rem;
+}
+.rec-title i{
+    color:#f7233e;
+    font-weight: bold;
+}
+
+.rec-en{
+    font-size: .22rem;
+    color: #313131;
+    line-height: .3rem;
+}
+
+.rec-use{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .1rem;
+}
+.rec-use-wrap{
+    width: 40%;
+    position: relative;
+    height: .5rem;
+}
+
+.rec-use-item{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px  solid #fff;
+    width: .5rem;
+    height: .5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.rec-use-wrap .rec-use-item:nth-child(2){
+    left: .3rem;
+}
+.rec-use-wrap .rec-use-item:nth-child(3){
+    left: .6rem;
+}
+.rec-use-wrap .rec-use-item:nth-child(4){
+    left: .9rem;
+}
+
+.rec-use-more{
+    width: 60%;
+    color: #dadada;
+    font-size: .16rem;
+}
+.rec-use-more p{
+    line-height: .24rem;
+}
+.rec-use-more i{
+    font-size: .2rem;
+}
+/* 底部 */
+
+
+footer{
+    position: fixed;
+    width: 100%;
+    height: .88rem;
+    bottom: 0;
+    left: 0;
+    background: #393a3f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+footer a{
+    flex: 1;
+    color: #ECEBEB;
+    font-size: .5rem!important;
+    font-weight: 400;
+}
+
+footer .icon-lineVideo{
+    color:#E52828;
+    font-size: .6rem!important;
+}
